@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, input {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --pink-title-color: #B52184;
+  --blue-paragraph-color: #312D64;
+}
+
+.page {
+  max-width: 77.5rem;
+  margin: 0 auto;
+}
+
+.astronaut-img {
+  width: 36rem;
+  padding: 0 2.7rem 0;
+  
+}
+
+.astronaut,
+.cards,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 5rem;
+}
+
+.astronaut div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.astronaut {
+  background: #F9F4FB;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--pink-title-color);
+}
+
+.text p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue-paragraph-color);
+  margin-bottom: 3.5rem;
+}
+
+.text {
+  text-align: center;
+  margin: 1.7rem 0 3.5rem;
+}
+
+.text-and-arrow {
+  margin: 0 0 9.3rem;
+}
+
+.cards {
+  padding: 5rem;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+.card {
+  max-width: 45rem;
+  min-height: 35rem;
+  padding: 2.7rem;
+
+  background: #fff;
+
+  border-radius: 2rem;
+}
+
+.card h3 {
+  font-size: 2.9rem;
+  font-weight: 900;
+
+  color: var(--pink-title-color);
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  color: var(--blue-paragraph-color);
+}
+
+.contacts {
+  background: #F9F4FB;
+}
+
+.contacts fieldset {
+  border: none;
+  width: 60%;
+}
+
+.fieldset-container legend {
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  margin: 7.8rem 0 4.3rem;
+
+  color: var(--pink-title-color);
+}
+
+form {
+  position: relative;
+
+  display: flex;
+  row-gap: 2.4rem;
+}
+
+form, form div {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+form > div > img {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  position: absolute;
+  margin-left: 15px;  
+}
+
+.input-field {
+  width: 100%;
+  outline: none;
+  padding: 1.2rem 1.2rem 1.6rem 5rem;
+
+  background: transparent;
+
+  border: 1.5px solid #312d64;
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+textarea {
+  width: 100%;
+  height: 12.6rem;
+
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem 1.6rem;
+  border: 1.5px solid #312D64;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+}
+
+textarea::placeholder {
+  color:var(--blue-paragraph-color);
+  font-size: 1.6rem;
+}
+
+form button {
+  width: 15.2rem;
+
+  border: none;
+  border-radius: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 24px;
+
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  color: #fff;
+
+  padding: 1rem 1.6rem;
+  margin-bottom: 6.5rem;
+
+  cursor: pointer;
+}
+
+footer {
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 1.6rem;
+
+  color: #fff;
+}
+
+.pink-stars {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  
+  .page {
+    max-width: none;
+  }
+
+  .astronaut {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 2.9rem 10rem 10rem;
+    max-height: 83rem;
+  }
+
+  .astronaut-img {
+    width: 73rem;
+    padding: 0;
+  }
+
+  .astronaut div {
+    align-items: start;
+  }
+
+  .text h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+
+  .text p {
+    font-size: 3.2rem;
+    margin-bottom: 17.9rem
+  }
+
+  .btn-img {
+    justify-self: flex-end;
+  }
+
+  .text-and-arrow {
+    margin-top: 31.2rem;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6.5rem 11rem;
+
+    column-gap: 6rem;
+  }
+  
+  .card {
+    max-width: 50rem;
+    min-height: 46rem;
+  }
+
+  .card h3 {
+    font-size: 3.5rem;
+    margin:4rem 0 2.4rem;
+  }
+
+  .card p {
+    font-size: 1.9rem;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 9.2rem;
+  }
+
+  .contacts fieldset {
+    width: 50vw;
+  }
+
+  .fieldset-container {
+    padding-left: 10.9rem;
+  }
+
+  .fieldset-container legend {
+    font-size: 4.2rem;
+  }
+
+  .pink-stars {
+    display: block;
+    height: 60rem;
+    width: 70rem;
+  }
+
+  footer p {
+    padding: 3rem;
+  }
+
+}
